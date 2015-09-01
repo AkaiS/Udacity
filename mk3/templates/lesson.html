@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="lesson">
+	<div><h2>Lesson {{lessonnum}} </h2></div>
+    
+{% for concept in concepts %}
+<div class="note">
+    <div class="concept-title">
+        <h3>{{ concept[0] }}</h3>
+    </div>
+    {% if concept[2] %}
+    <div class="example">
+        {{concept[2]}}
+    </div>
+    {% endif %}
+    <div class="concept-description">
+        {{ concept[1] }}
+    </div>
+</div>
+{% endfor %}
+
+</div>
+
+
+<div id="comment">
+    <h3>Comment:</h3>
+    <form action='/lesson/post' method="post">
+        <div><textarea name="author" placeholder ="Who you be?!" rows="1" cols="40"></textarea></div>
+        <div><textarea name="content" placeholder="Leave me a comment!" rows="3" cols="60"></textarea></div>
+        <div><input type="submit" value="Comment"></div>
+        <input type ="hidden" name="number" value="{{ lessonnum }}">
+    </form>
+</div>
+
+<div id="comments">
+    {% for comment in comments %}
+    <div class="singlecomment">
+        <div class="author">{{ comment.author }} at <span class="time">{{ comment.date.ctime() }}</span></div>
+        <div class="content">{{ comment.content }}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

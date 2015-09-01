@@ -1,0 +1,108 @@
+* {
+    font-family: Verdana;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+    color: white;
+    background: linear-gradient(#8DC6FF, #33CCFF);
+    background: -moz-linear-gradient(#8DC6FF, #33CCFF);
+    background: -webkit-linear-gradient(#8DC6FF, #33CCFF);
+    padding-top: .25em;
+    margin-bottom: 1em;
+    width: 100%
+}
+
+.button {
+    display: block;
+    height: 2em;
+    width: 6em;
+    line-height: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    margin-bottom: .25em;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+.right {
+    display: block;
+    float: right;
+    margin: auto;
+    padding-right: .5em;
+}
+
+.dropdown {
+    padding-top: .5em;
+}
+
+.lesson {
+    padding: 0.3125em;
+    border-radius: 0.3125em;
+    margin-bottom: 1em;
+    width: 90%;
+    margin: auto;
+}
+
+.note {
+    border-radius: 0.3125em;
+    padding: .2em;
+    margin: .8em;
+    box-shadow: 3px 3px 3px 3px #888888;
+    -moz-box-shadow: 3px 3px 3px 3px #888888;
+    -webkit-box-shadow: 3px 3px 3px 3px #888888;
+}
+
+.example {
+    font-weight: bold;
+}
+
+.author {
+    font-weight: bold;
+    color: #1A1A80;
+}
+
+#comment {
+    margin-top: 1em;
+    margin: auto;
+    width: 60%;
+}
+
+#comments {
+    margin-top: 1em;
+    margin: auto;
+    width: 60%;
+}
+
+.singlecomment {
+    margin-top: 2em;
+    border-bottom: 2px solid #1A1A80;
+    border-radius: 2px;
+    padding-bottom: 4px;
+}
+
+.time {
+    float: right;
+}
+
+textarea {
+    resize: none;
+}

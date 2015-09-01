@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Akai Senghor's Notes</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="header">
+        <div class="row">
+            <a class="button" href="/">
+                Akai's Website
+            </a>
+            <div class="right">
+                <div class="dropdown">
+                    <form action="/lesson" method="get">
+                        <select name="lesson">
+                            <optgroup label="- pick a lesson -">
+                                <option value="0">Lesson 0</option>
+                                <option value="1">Lesson 1</option>
+                                <option value="2">Lesson 2</option>
+                                <option value="3">Lesson 3</option>
+                                <option value="4">Lesson 4</option>
+                                <option value="5">Lesson 5</option>
+                                <option value="6">Lesson 6</option>
+                                <option value="7">Lesson 7</option>
+                                <option value="8">Lesson 8</option>
+                                <option value="9">Lesson 9</option>
+                                <option value="10">Lesson 10</option>
+                                <option value="11">Lesson 11</option>
+                                <option value="12">Lesson 12</option>
+                            </optgroup>
+                        </select>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
